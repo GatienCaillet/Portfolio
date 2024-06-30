@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('nav a').on('click', function(e) {
+    $("#primary-navbar a").on('click', function(e) {
         e.preventDefault();
         
         var targetId = $(this).attr('href').substring(1);
