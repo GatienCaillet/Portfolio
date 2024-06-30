@@ -54,7 +54,96 @@ header h2 {
 
 /* Cartes */
 .card {
-    background: #e2e2e2;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.card-role {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card-technologies {
+    margin-top: 10px;
+}
+
+.card-technologies span {
+    margin-right: 5px;
+    margin-bottom: 5px; /* Ajouter un espacement vertical */
+    font-size: 0.8rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.card-technologies span i {
+    margin-right: 5px;
+}
+
+/* Couleurs pour chaque technologie */
+.js {
+    color: #f0db4f; /* Jaune pour JavaScript */
+    border-color: #f0db4f;
+}
+
+.csharp {
+    color: #9b4f96; /* Violet pour C# */
+    border-color: #9b4f96;
+}
+
+.html {
+    color: #e34c26; /* Orange pour HTML */
+    border-color: #e34c26;
+}
+
+.css {
+    color: #264de4; /* Bleu pour CSS */
+    border-color: #264de4;
+}
+
+.php {
+    color: #4f5b93; /* Bleu/Violet pour PHP */
+    border-color: #4f5b93;
+}
+
+.mysql {
+    color: #00758f; /* Bleu pour MySQL */
+    border-color: #00758f;
+}
+
+.figma {
+    color: #e64661; /* Rose vif pour Figma */
+    border-color: #e64661;
+}
+
+.jira {
+    color: #2684ff; /* Bleu vif pour Jira */
+    border-color: #2684ff;
+}
+
+.trello {
+    color: #0079bf; /* Bleu foncé pour Trello */
+    border-color: #0079bf;
 }
 
 /* Footer */
