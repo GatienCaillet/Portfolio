@@ -5,12 +5,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Gatien CAILLET</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <h1>CAILLET Gatien</h1>
+
+    <nav id="top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#top">Portfolio Gatien Caillet</a>
+            <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competences">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projets">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiences">Expériences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formation">Formation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#interets">Centres d'intérêt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-1 fw-bold text-center">Bonjour, je m'appelle Gatien Caillet</h1>
+                    <h2 class="display-4 text-center">Je suis Développeur Full Stack sur Grenoble</h2>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/photo_gatien.jpg" class="img-fluid float-end" alt="Photo de Gatien Caillet">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-4">
+
+        <section id="introduction" class="py-4">
+            <div class="section-title d-flex justify-content-between align-items-center">
+                <h2>Introduction</h2>
+                <a href="#top"><i class="fas fa-arrow-up"></i></a>
+            </div>
+  
+            <p>Je suis actuellement en attente de réponse en Master. En fonction des réponse je cherche un stage ou bien un emploi.</p>
+        </section>
+
+        <section id="competences" class="py-4">
+            <div class="section-title d-flex justify-content-between align-items-center">
+                <h2>Compétences Techniques</h2>
+                <a href="#top"><i class="fas fa-arrow-up"></i></a>
+            </div>
+  
+            <ul class="list-group">
+                <li class="list-group-item">HTML, CSS, JavaScript, PHP, Python</li>
+                <li class="list-group-item">Java, C#, C, C++</li>
+                <li class="list-group-item">SQL, NOSQL, Neo4j</li>
+                <li class="list-group-item">Dart, NodeJS, Android, Docker</li>
+                <li class="list-group-item">Tests unitaires et fonctionnels, Documentation</li>
+            </ul>
+        </section>
+
+        <section id="projets" class="py-4">
+            <div class="section-title d-flex justify-content-between align-items-center">
+                <h2>Projets Réalisés</h2>
+                <a href="#top"><i class="fas fa-arrow-up"></i></a>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Prévision d'effectifs scolaires - Alpamayo Grenoble</h3>
+                            <p class="card-text">Développement d'un logiciel de prévision d'effectifs scolaires, hypothèses de secteurs de recrutement. Technologies: JavaScript, HTML, CSS, C#, MySQL. Rôle: Développeur, équipe de 6 personnes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Site de vente aux enchères - IUT2 Université Grenoble Alpes</h3>
+                            <p class="card-text">Création d'un site de vente aux enchères en programmation concurrente. Technologies: PHP, CSS, HTML, JavaScript. Rôle: Responsable front-end, équipe de 6 personnes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Intérim - Hager Security Crolles</h3>
+                            <p class="card-text">Travailler dans des conditions professionnelles en production. Durée: 2 mois.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiences" class="py-4">
+            <div class="section-title d-flex justify-content-between align-items-center">
+                <h2>Expériences Professionnelles</h2>
+                <a href="#top"><i class="fas fa-arrow-up"></i></a>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">Stage + Alternance | Alpamayo Grenoble (2023-2024)</li>
+                <li class="list-group-item">Projet | IUT2 - Université Grenoble Alpes (2022-2023)</li>
+                <li class="list-group-item">Intérim | Hager Security Crolles (2022)</li>
+            </ul>
+        </section>
+
+        <section id="formation" class="py-4">
+            <div class="section-title d-flex justify-content-between align-items-center">
+                <h2>Formation</h2>
+                <a href="#top"><i class="fas fa-arrow-up"></i></a>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">BUT Informatique | IUT2 - Université Grenoble Alpes (2023-2024, En cours)</li>
+                <li class="list-group-item">BAC Options mathématiques, physique | Lycée Marie Reynoard Villard-Bonnot (2018-2021, avec mention)</li>
+            </ul>
+        </section>
+
+        <section id="interets" class="py-4">
+            <div class="section-title d-flex justify-content-between align-items-center">
+                <h2>Centres d'intérêt</h2>
+                <a href="#top"><i class="fas fa-arrow-up"></i></a>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">Sports collectifs (volley, basket, foot, tennis de table, badminton)</li>
+                <li class="list-group-item">Sports de montagne (escalade, ski, randonnée)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>&copy; 2024 Gatien Caillet - Portfolio</p>
+                </div>
+                <div class="col">
+                    <ul class="list-inline social-icons">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/gatien-caillet-68250825a/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/GatienCaillet" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Wg9RPm0xpKlr21N6wpDwzH/c6gQ25xvx0r9mk7H5f2cT3Z" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

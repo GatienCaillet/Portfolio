@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Définition de la hauteur pour le header */
+header {
+    min-height: 100vh; /* 100% de la hauteur de la fenêtre visible */
+    display: flex;
+    align-items: center; /* Centrage vertical du contenu */
+}
+
+/* Stylisation du contenu du header */
+header .container {
+    text-align: center;
+    color: #fff; /* Texte en blanc */
+}
+
+/* Ajustement de la taille du texte */
+header h1 {
+    font-size: 3rem; /* Taille du texte pour h1 */
+    font-weight: bold; /* Texte en gras */
+}
+
+header h2 {
+    font-size: 1.5rem; /* Taille du texte pour h2 */
+}
+
+.section-title a {
+    color: #007bff; /* Couleur de lien par défaut de Bootstrap */
+    text-decoration: none; /* Enlever le soulignement des liens */
+    font-size: 1.5rem; /* Taille de la flèche */
+}
+
+.section-title a:hover {
+    color: #0056b3; /* Couleur de survol du lien */
+}
+
+.section-title {
+    background: #f4f4f4;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.list-group-item {
+    border-left: #77aaff 3px solid;
+}
+
+.card {
+    background: #e2e2e2;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+}
