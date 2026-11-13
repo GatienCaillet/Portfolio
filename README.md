@@ -1,26 +1,32 @@
-# Portfolio — Gatien Caillet
+<div align="center">
 
-Portfolio personnel de Gatien Caillet, développeur full stack à Grenoble, en Master 2 MIASHS (Informatique & Cognition) à l'Université Grenoble Alpes.
+# Gatien Caillet
 
-Je recherche un **stage de fin d'études de 5 à 6 mois** en développement logiciel ou web à partir de **février 2027**.
+Développeur full stack à Grenoble, en Master 2 Informatique & Cognition.
 
-## Le site
+### [→ Voir le portfolio en ligne](https://gatiencaillet.github.io/Portfolio/)
 
-Site statique (HTML, CSS, JavaScript natif, sans framework ni dépendance de build).
+[gatiencaillet.github.io/Portfolio](https://gatiencaillet.github.io/Portfolio/)
 
-- **Design** : style *Vast Quiet Cinematic* : grands paysages calmes, titre court centré, très peu d'interface.
-- **Montagnes génératives** : les crêtes du hero (aube) et du contact (crépuscule) sont dessinées en SVG par un algorithme de déplacement du point médian avec une graine fixe, et animées en parallaxe au défilement.
-- **Accessibilité** : navigation au clavier, respect de `prefers-reduced-motion`, contenu lisible sans JavaScript.
-- **Responsive** : du téléphone (375 px) au grand écran.
+</div>
 
-### Sections
+---
 
-1. Accueil : présentation et disponibilité
-2. À propos : parcours en bref, langues, centres d'intérêt
-3. Projets : simulateur de modèles cognitifs (UGA), prévision d'effectifs scolaires et portail familles (Alpamayo), plateforme d'enchères (IUT2)
-4. Parcours : formation et expérience
-5. Compétences
-6. Contact
+Je cherche un **stage de fin d'études de 5 à 6 mois** en développement logiciel ou web, à partir de **février 2027**.
+
+## Sur le site
+
+- **Projets** : un simulateur de modèles cognitifs pour des chercheurs de l'UGA (Vue.js, D3.js), un logiciel .NET de prévision d'effectifs scolaires déployé dans 40 collectivités, un portail familles maquetté sous Figma, et un site d'enchères en PHP.
+- **Parcours** : Master MIASHS à l'Université Grenoble Alpes, stage de M1, 15 mois chez Alpamayo pendant le BUT Informatique.
+- **Compétences** : Java, C# (.NET), Python, PHP, JavaScript / TypeScript, Vue.js, React, Angular, SQL et NoSQL, Docker.
+
+## Comment il est fait
+
+Un site statique en HTML, CSS et JavaScript, sans framework ni étape de build, publié avec GitHub Pages.
+
+Les montagnes de l'accueil et du contact sont dessinées en SVG au chargement de la page. Chaque crête est obtenue par déplacement du point médian à partir d'une graine fixe, donc le paysage est le même à chaque visite. Les couches glissent légèrement au défilement, sauf si le système demande de réduire les animations.
+
+Le site est utilisable au clavier, lisible sans JavaScript, et testé du téléphone (375 px) au grand écran.
 
 ## Lancer en local
 
