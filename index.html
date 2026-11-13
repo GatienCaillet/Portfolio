@@ -1,236 +1,196 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Gatien CAILLET</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gatien Caillet, développeur full stack à Grenoble</title>
+  <meta name="description" content="Développeur full stack à Grenoble, en Master 2 Informatique & Cognition. Je cherche un stage de fin d'études de 5 à 6 mois à partir de février 2027.">
+  <meta name="theme-color" content="#E9ECEE">
+  <meta property="og:title" content="Gatien Caillet, développeur full stack à Grenoble">
+  <meta property="og:description" content="Master 2 Informatique & Cognition. Stage de fin d'études recherché à partir de février 2027.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <nav id="top" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#top">Portfolio Gatien Caillet</a>
-            <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                <div class="mx-auto">
-                    <ul id="primary-navbar" class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#introduction">Introduction</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#competences">Compétences</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projets">Projets</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experiences">Expériences</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#formation">Formation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#interets">Centres d'intérêt</a>
-                        </li>
-                    </ul>
-                </div>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/in/gatien-caillet-68250825a/" target="_blank">
-                            <i class="fab fa-linkedin fa-2x"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/GatienCaillet" target="_blank">
-                            <i class="fab fa-github fa-2x"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <a class="skip" href="#apropos">Aller au contenu</a>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top">Gatien Caillet</a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#projets">Projets</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Contact</a>
     </nav>
-    
+  </header>
 
-    <header class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <h1 class="display-1 fw-bold text-center">Bonjour, je m'appelle Gatien Caillet</h1>
-                    <h2 class="display-4 text-center">Je suis Développeur Web sur Grenoble</h2>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/photo_gatien.jpg" class="img-fluid float-end" alt="Photo de Gatien Caillet">
-                </div>
-            </div>
-        </div>
-    </header>
+  <section class="hero" id="top">
+    <svg class="range" data-range="dawn" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
+    <div class="hero__content">
+      <h1>Gatien Caillet</h1>
+      <p class="hero__sub">Développeur full stack à Grenoble, en Master 2 Informatique &amp; Cognition.</p>
+      <p class="hero__avail">Je cherche un stage de fin d'études de 5 à 6 mois à partir de février 2027.</p>
+      <div class="hero__actions">
+        <a class="btn" href="#projets">Voir mes projets</a>
+        <a class="link" href="#contact">M'écrire</a>
+      </div>
+    </div>
+  </section>
 
-    <main class="container py-4">
+  <main>
 
-        <section id="introduction" class="py-4">
-            <div class="section-title d-flex justify-content-between align-items-center my-2">
-                <h2>Introduction</h2>
-                <a href="#top"><i class="fas fa-arrow-up"></i></a>
-            </div>
-            <p>
-                Je suis Gatien Caillet, un développeur web sur Grenoble. 
-                J'ai récemment obtenu mon diplôme en BUT Informatique. 
-                Pendant ma troisième année, j'ai eu l'opportunité de travailler en alternance chez Alpamayo en tant que développeur web. 
-                Ça m'a vraiment permis de me plonger dans des langages comme C#, JavaScript, HTML et CSS. 
-                J'ai appris énormément sur l'autonomie et la gestion de projets, surtout comment bien organiser mes tâches.
-            </p>
-            <p>
-                Depuis mon enfance, ma passion pour l'informatique a toujours été présente. 
-                J'ai débuté en développant des mods, des maps et en modifiant les jeux selon mes propres envies.
-            </p>
-            <p>   
-                À court terme, je prévois de poursuivre mes études en Master pour approfondir mes compétences techniques. 
-                Sur le long terme, mon objectif est de rejoindre une équipe dynamique où je pourrai mettre mes compétences en pratique et contribuer à des projets intéressants à plein temps.
-            </p>
-        </section>
+    <section class="section about" id="apropos">
+      <div class="about__photo">
+        <img src="images/photo_gatien.jpg" alt="Gatien Caillet en randonnée, la vallée du Grésivaudan derrière lui" width="1201" height="1600" loading="lazy">
+      </div>
+      <div class="about__text">
+        <h2>À propos</h2>
+        <p>Je suis en Master 2 MIASHS, parcours Informatique &amp; Cognition, à l'Université Grenoble Alpes, après un BUT Informatique à l'IUT2 de Grenoble.</p>
+        <p>Pendant mon BUT, j'ai passé 15 mois chez Alpamayo, en stage puis en alternance, sur un logiciel .NET de prévision d'effectifs scolaires utilisé aujourd'hui par 40 collectivités.</p>
+        <p>J'ai commencé l'informatique enfant, en créant des mods et des maps pour les jeux auxquels je jouais.</p>
+        <dl class="facts">
+          <div><dt>Basé à</dt><dd>Grenoble (38), véhiculé</dd></div>
+          <div><dt>Langues</dt><dd>Français, anglais B2/C1</dd></div>
+          <div><dt>Hobbies</dt><dd>Escalade de bloc depuis 3 ans, veille quotidienne sur l'IA et les LLM</dd></div>
+        </dl>
+      </div>
+    </section>
 
-        <section id="competences" class="py-4">
-            <div class="section-title d-flex justify-content-between align-items-center my-2">
-                <h2>Compétences Techniques</h2>
-                <a href="#top"><i class="fas fa-arrow-up"></i></a>
-            </div>
-  
-            <ul class="list-group mb-2">
-                <li class="list-group-item">HTML, CSS, JavaScript, PHP, Python</li>
-                <li class="list-group-item">Java, C#, C, C++</li>
-                <li class="list-group-item">SQL, NOSQL, Neo4j</li>
-                <li class="list-group-item">Dart, NodeJS, Android, Docker</li>
-                <li class="list-group-item">Tests unitaires et fonctionnels, Documentation</li>
-            </ul>
-        </section>
+    <section class="section" id="projets">
+      <h2>Projets</h2>
 
-        <section id="projets" class="py-4">
-            <div class="section-title d-flex justify-content-between align-items-center my-2">
-                <h2>Projets Réalisés</h2>
-                <a href="#top"><i class="fas fa-arrow-up"></i></a>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title">Développement d'une application métier</h3>
-                            <p class="card-description">Pendant mon année d'alternance chez Alpamayo, j'ai contribué au développement d'un logiciel destiné 
-                                aux départements et communes, conçu pour gérer les secteurs scolaires et effectuer 
-                                des prospectives pour les collèges et les écoles. Mon rôle a consisté à ajouter de nouvelles fonctionnalités, 
-                                à améliorer l'interface utilisateur, ainsi qu'à corriger des bugs pour optimiser le logiciel.
-                            </p>
-                            <p class="card-role">Rôle: Développeur, équipe de 5 personnes</p>
-                            <div class="card-technologies">
-                                <span class="jira"><i class="fab fa-jira"></i> Jira</span>
-                                <span class="csharp"><i class="fa-solid fa-code"></i> C#</span>
-                                <span class="js"><i class="fa-brands fa-js"></i> JavaScript</span>
-                                <span class="html"><i class="fa-brands fa-html5"></i> HTML</span>
-                                <span class="css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                                <span class="mysql"><i class="fa-solid fa-database"></i> MySQL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title">Conception de l'Ergonomie et de l'Interface Homme-Machine (IHM)</h3>
-                            <p class="card-description">Durant mon expérience d'alternance chez Alpamayo, 
-                                j'ai eu l'occasion de travailler de manière autonome sous la supervision de la responsable produit sur la conception 
-                                et l'ergonomie d'un portail familles. 
-                                Ce projet visait à créer une interface conviviale permettant aux parents d'inscrire leurs enfants aux différents services 
-                                périscolaires tels que la restauration, les transports et la garderie. J'ai utilisé Figma pour élaborer des maquettes 
-                                et améliorer l'interface homme-machine du portail.
-                            </p>
-                            <p class="card-role">Rôles: Ergonome IHM, équipe de 2 personnes</p>
-                            <div class="card-technologies">
-                                <span class="jira"><i class="fab fa-jira"></i> Jira</span>
-                                <span class="figma"><i class="fa-brands fa-figma"></i> Figma</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title">Développement d'un site de vente aux enchères</h3>
-                            <p class="card-description">En projet de fin de 2ème année de BUT Informatique à l'IUT2 Université Grenoble Alpes, 
-                                nous avons développé un site de vente aux enchères en programmation concurrente. 
-                                Mon rôle principal a été de concevoir le front-end de l'application en respectant fidèlement les maquettes préétablies.
-                            </p>
-                            <p class="card-role">Rôle: Responsable front-end, équipe de 6 personnes</p>
-                            <div class="card-technologies">
-                                <span class="trello"><i class="fab fa-trello"></i> Trello</span>
-                                <span class="php"><i class="fa-brands fa-php"></i> PHP</span>
-                                <span class="js"><i class="fa-brands fa-js"></i> JavaScript</span>
-                                <span class="html"><i class="fa-brands fa-html5"></i> HTML</span>
-                                <span class="css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <ul class="projects">
+        <li class="project">
+          <div class="project__head">
+            <h3>Simulateur de modèles cognitifs</h3>
+            <p class="project__meta">Université Grenoble Alpes, stage de M1 (projet tuteuré), 2026</p>
+          </div>
+          <div class="project__body">
+            <p>Application web qui simule des temps de réponse et estime les paramètres de modèles d'apprentissage arithmétique. J'ai développé les interfaces interactives et les graphiques qui permettent aux chercheurs de tester leurs modèles.</p>
+            <p class="project__role">Équipe de 3, avec des chercheurs en sciences cognitives.</p>
+            <ul class="tags"><li>Vue.js</li><li>D3.js</li><li>Bootstrap</li></ul>
+          </div>
+        </li>
 
-        <section id="experiences" class="py-4">
-            <div class="section-title d-flex justify-content-between align-items-center my-2">
-                <h2>Expériences Professionnelles</h2>
-                <a href="#top"><i class="fas fa-arrow-up"></i></a>
-            </div>
-            <ul class="list-group">
-                <li class="list-group-item">Stage + Alternance | Alpamayo Grenoble (2023-2024)</li>
-                <li class="list-group-item">Intérim | Hager Security Crolles (2022)</li>
-            </ul>
-        </section>
+        <li class="project">
+          <div class="project__head">
+            <h3>Prévision d'effectifs scolaires</h3>
+            <p class="project__meta">Alpamayo, stage puis alternance, 2023 à 2024</p>
+          </div>
+          <div class="project__body">
+            <p>Logiciel métier qui aide les départements et les communes à gérer leurs secteurs scolaires et à prévoir les effectifs des écoles et des collèges. J'ai travaillé sur l'architecture back-end, le traitement des hypothèses de secteurs de recrutement, de nouvelles fonctionnalités et des corrections de bugs.</p>
+            <p class="project__role">Équipe Agile de 6 développeurs. Déployé dans 40 collectivités.</p>
+            <ul class="tags"><li>C# / .NET</li><li>JavaScript</li><li>MySQL</li><li>Jira</li></ul>
+          </div>
+        </li>
 
-        <section id="formation" class="py-4">
-            <div class="section-title d-flex justify-content-between align-items-center my-2">
-                <h2>Formation</h2>
-                <a href="#top"><i class="fas fa-arrow-up"></i></a>
-            </div>
-            <ul class="list-group">
-                <li class="list-group-item">BUT Informatique | IUT2 - Université Grenoble Alpes (2023-2024)</li>
-                <li class="list-group-item">BAC Options mathématiques, physique | Lycée Marie Reynoard Villard-Bonnot (2018-2021, avec mention)</li>
-            </ul>
-        </section>
+        <li class="project">
+          <div class="project__head">
+            <h3>Portail familles</h3>
+            <p class="project__meta">Alpamayo, ergonomie et IHM, 2024</p>
+          </div>
+          <div class="project__body">
+            <p>Maquettes d'un portail où les parents inscrivent leurs enfants à la restauration scolaire, au transport et à la garderie. Travail en autonomie, sous la supervision de la responsable produit.</p>
+            <p class="project__role">Binôme avec la responsable produit.</p>
+            <ul class="tags"><li>Figma</li><li>Jira</li></ul>
+          </div>
+        </li>
 
-        <section id="interets" class="py-4">
-            <div class="section-title d-flex justify-content-between align-items-center my-2">
-                <h2>Centres d'intérêt</h2>
-                <a href="#top"><i class="fas fa-arrow-up"></i></a>
-            </div>
-            <ul class="list-group">
-                <li class="list-group-item">Sports collectifs (volley, basket, foot, tennis de table, badminton)</li>
-                <li class="list-group-item">Sports de montagne (escalade, ski, randonnée)</li>
-            </ul>
-        </section>
-    </main>
+        <li class="project">
+          <div class="project__head">
+            <h3>Site de vente aux enchères</h3>
+            <p class="project__meta">IUT2 Grenoble, projet de 2ᵉ année, 2023</p>
+          </div>
+          <div class="project__body">
+            <p>Site d'enchères en programmation concurrente. J'étais responsable du front-end, réalisé à partir de maquettes imposées.</p>
+            <p class="project__role">Équipe de 6.</p>
+            <ul class="tags"><li>PHP</li><li>JavaScript</li><li>HTML / CSS</li><li>Trello</li></ul>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-    <footer class="bg-dark text-white text-center py-3 mt-auto">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <p>&copy; 2024 Gatien Caillet - Portfolio</p>
-                </div>
-                <div class="col">
-                    <ul class="list-inline social-icons">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/gatien-caillet-68250825a/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                        <li class="list-inline-item"><a href="https://github.com/GatienCaillet" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <section class="section" id="parcours">
+      <h2>Parcours</h2>
+
+      <ol class="timeline">
+        <li>
+          <span class="timeline__date">2025 – 2027</span>
+          <div>
+            <h3>Master MIASHS, Informatique &amp; Cognition</h3>
+            <p>Université Grenoble Alpes, M2 en cours</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline__date">janv. – juin 2026</span>
+          <div>
+            <h3>Développeur full stack, stage de M1</h3>
+            <p>Université Grenoble Alpes, projet tuteuré</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline__date">2023 – 2024</span>
+          <div>
+            <h3>Développeur full stack .NET</h3>
+            <p>Alpamayo, Grenoble. Stage puis alternance, pendant le BUT, 15 mois.</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline__date">2021 – 2024</span>
+          <div>
+            <h3>BUT Informatique, parcours Réalisation d'applications</h3>
+            <p>IUT2 Grenoble</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="competences">
+      <h2>Compétences</h2>
+
+      <dl class="skills">
+        <div><dt>Langages et back-end</dt><dd>Java, C# (.NET), C++, Python, PHP (Laravel), Node.js (Express), API REST</dd></div>
+        <div><dt>Front-end</dt><dd>JavaScript, TypeScript, HTML, CSS, Vue.js (Nuxt), Angular, React, D3.js</dd></div>
+        <div><dt>Bases de données</dt><dd>PostgreSQL, MySQL, SQLite, MongoDB</dd></div>
+        <div><dt>Outils</dt><dd>Git (GitHub, GitLab, Bitbucket), Docker, Linux, Jira, Trello, Figma</dd></div>
+        <div><dt>Méthodes</dt><dd>Agile (Scrum), programmation orientée objet, MVC, UML</dd></div>
+      </dl>
+    </section>
+
+  </main>
+
+  <section class="contact" id="contact">
+    <svg class="range" data-range="dusk" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
+    <div class="contact__content">
+      <h2>Contact</h2>
+      <p>Pour un stage de fin d'études de 5 à 6 mois à partir de février 2027, le plus simple est de m'écrire.</p>
+      <a class="btn btn--light" href="mailto:gatien38@hotmail.fr">gatien38@hotmail.fr</a>
+      <ul class="socials">
+        <li>
+          <a href="https://www.linkedin.com/in/gatiencaillet" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/GatienCaillet" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .3"/></svg>
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+    <footer class="footer">
+      <span>© 2026 Gatien Caillet</span>
+      <span>Grenoble</span>
     </footer>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Wg9RPm0xpKlr21N6wpDwzH/c6gQ25xvx0r9mk7H5f2cT3Z" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
