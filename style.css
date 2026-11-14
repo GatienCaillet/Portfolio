@@ -124,10 +124,25 @@ p { margin: 0 0 1em; text-wrap: pretty; }
   .nav__links a:not([href="#contact"]) { display: none; }
 }
 
-/* Montagnes générées en SVG */
+/* Photo des Alpes en fond (accueil et contact), avec un voile pour garder le texte lisible. */
 
-.range { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-.range g { will-change: transform; }
+.bg-photo {
+  position: absolute;
+  inset: -8% 0 0 0;
+  width: 100%;
+  height: 108%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 50% 62%;
+  will-change: transform;
+}
+.hero::after,
+.contact::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
 
 /* Accueil */
 
@@ -138,7 +153,14 @@ p { margin: 0 0 1em; text-wrap: pretty; }
   display: flex;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(180deg, #CDD4D9 0%, #DEE2E4 45%, #E8E6E1 60%, #E3E7E9 100%);
+  color: var(--mist);
+  background: #1B2F4A;
+}
+
+.hero::after {
+  background:
+    linear-gradient(180deg, rgba(12, 22, 38, .55) 0%, rgba(12, 22, 38, .35) 45%, rgba(12, 22, 38, 0) 70%),
+    linear-gradient(0deg, rgba(12, 18, 24, .45) 0%, rgba(12, 18, 24, 0) 30%);
 }
 
 .hero__content {
@@ -158,10 +180,11 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .hero__sub {
   margin: 20px 0 6px;
   font-size: clamp(19px, 1.8vw, 22px);
-  color: var(--ink);
   text-wrap: balance;
 }
-.hero__avail { color: var(--ink-soft); font-size: 17px; margin-bottom: 28px; }
+.hero__content { text-shadow: 0 1px 18px rgba(8, 16, 30, .35); }
+.hero__content .btn { text-shadow: none; }
+.hero__avail { color: rgba(233, 236, 238, .85); font-size: 17px; margin-bottom: 28px; }
 .hero__actions { display: flex; justify-content: center; align-items: center; gap: 28px; flex-wrap: wrap; }
 
 @keyframes enter { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
@@ -296,7 +319,12 @@ p { margin: 0 0 1em; text-wrap: pretty; }
   align-items: center;
   overflow: hidden;
   color: var(--mist);
-  background: linear-gradient(180deg, #171B20 0%, #262A31 40%, #4A4A52 58%, #6D6862 68%, #24282C 100%);
+  background: #141B24;
+}
+/* Voile plus dense qu'en accueil : ambiance de fin de journée, texte et pied de page lisibles. */
+.contact::after {
+  background:
+    linear-gradient(180deg, rgba(10, 14, 20, .78) 0%, rgba(10, 14, 20, .55) 50%, rgba(10, 14, 20, .35) 70%, rgba(10, 14, 20, .8) 100%);
 }
 .contact__content {
   position: relative;
